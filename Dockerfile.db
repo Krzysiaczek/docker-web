@@ -1,0 +1,12 @@
+FROM mysql:5.6
+
+# RUN usermod -u 1000 mysql
+# RUN mkdir -p /var/run/mysqld
+# RUN chmod -R 777 /var/run/mysqld
+
+ENV MYSQL_USER mysql
+
+COPY ./db/fix_permissions.sh /
+RUN chmod 755 /fix_permissions.sh
+
+ENTRYPOINT ["/fix_permissions.sh"]

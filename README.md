@@ -6,5 +6,5 @@ Image location: https://hub.docker.com/r/krzysiaczek/web/
 Important files
 ---------------
 
-- Dockerfile.web.5.6 -> base (1.0) based on php:5.6-apache
-- Dockerfile.wev.1.01 -> update of the base with additional installation of PHP Composer, Git and zip extension required by internal process of Symfony installation
+- Dockerfile.web.5.6 -> based on php:5.6-apache common platform used for both servises web and subs
+- Recent image generated on current Dockerfile.web.5.6 file is version 1.04 at https://hub.docker.com/r/krzysiaczek/web/tags/
